@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Eros e Thanatos — Un percorso in tre incontri | Armonico Chaos</title>
+<meta name="description" content="Un percorso esperienziale in tre incontri per abitare la soglia tra Eros e Thanatos, attraverso il tocco, il respiro e il movimento. Padova, autunno 2026.">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Eros e Thanatos — Un percorso in tre incontri | Armonico Chaos">
+<meta property="og:description" content="Un percorso esperienziale in tre incontri per abitare la soglia tra Eros e Thanatos, attraverso l'ascolto, il movimento, il respiro e la voce. Padova, autunno 2026.">
+<meta property="og:image" content="https://armonicochaos-ai.github.io/eros-thanatos/assets/fessura.jpg">
+<meta property="og:url" content="https://armonicochaos-ai.github.io/eros-thanatos/">
+<meta property="og:locale" content="it_IT">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Eros e Thanatos — Un percorso in tre incontri">
+<meta name="twitter:description" content="Un percorso esperienziale in tre incontri per abitare la soglia tra Eros e Thanatos. Padova, autunno 2026.">
+<meta name="twitter:image" content="https://armonicochaos-ai.github.io/eros-thanatos/assets/fessura.jpg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700;800&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,300;1,9..144,400&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --ink:#2e2540;
+    --ink-soft:#5f5570;
+    --sage:#ece7f2;
+    --sage-deep:#d6cee2;
+    --cream:#f5f1f8;
+    --gold:#7d5a9e;
+    --gold-light:#a583c4;
+    --rust:#5a3a78;
+    --line:rgba(90,58,120,.2);
+    --shadow:0 20px 60px -25px rgba(40,28,60,.4);
+    --maxw:1180px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:'Fraunces',Georgia,serif;
+    color:var(--ink);
+    background:var(--cream);
+    line-height:1.65;
+    font-weight:400;
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+  }
+  h1,h2,h3,.spartan,.eyebrow,.btn,nav,.meta,.price-tag,label,input,select,button{
+    font-family:'League Spartan',system-ui,sans-serif;
+  }
+  .eyebrow{
+    font-size:.78rem;font-weight:600;letter-spacing:.32em;text-transform:uppercase;
+    color:var(--gold);margin-bottom:1.1rem;
+  }
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 clamp(1.4rem,4vw,3rem)}
+
+  /* ── NAV ── */
+  nav{
+    position:fixed;top:0;left:0;right:0;z-index:50;
+    display:flex;justify-content:space-between;align-items:center;
+    padding:1rem clamp(1.4rem,4vw,3rem);
+    background:rgba(243,240,232,0);transition:background .4s,box-shadow .4s,padding .4s;
+  }
+  nav.scrolled{background:rgba(243,240,232,.92);backdrop-filter:blur(10px);
+    box-shadow:0 1px 0 var(--line);padding:.7rem clamp(1.4rem,4vw,3rem)}
+  nav .brand{font-weight:700;letter-spacing:.12em;text-transform:uppercase;font-size:.9rem;color:var(--ink)}
+  nav .nav-cta{
+    font-size:.8rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;
+    color:var(--cream);background:var(--ink);padding:.6rem 1.2rem;border-radius:2px;
+    text-decoration:none;transition:background .3s;
+  }
+  nav .nav-cta:hover{background:var(--gold)}
+
+  /* ── HERO ── */
+  .hero{
+    display:grid;grid-template-columns:minmax(0,44%) 1fr;min-height:100vh;
+  }
+  .hero-img{
+    position:relative;overflow:hidden;background:#1c1530;
+  }
+  .hero-img img{
+    width:100%;height:100%;object-fit:cover;object-position:center;
+    filter:brightness(1.02);
+  }
+  .hero-img::after{
+    content:"";position:absolute;inset:0;
+    background:linear-gradient(105deg,rgba(28,21,48,.15) 0%,rgba(28,21,48,0) 40%,rgba(243,240,232,.05) 82%,var(--cream) 100%);
+  }
+  @media(max-width:820px){
+    .hero{grid-template-columns:1fr;min-height:auto}
+    .hero-img{height:52vh;min-height:340px}
+    .hero-img img{object-position:center 40%}
+    .hero-img::after{
+      background:linear-gradient(to bottom,rgba(28,21,48,.1) 55%,rgba(243,240,232,.5) 90%,var(--cream) 100%);}
+    .hero-text{padding:2.6rem clamp(1.6rem,6vw,3rem) 3.5rem}
+  }
+  .hero-text{
+    display:flex;flex-direction:column;justify-content:center;
+    padding:7rem clamp(1.6rem,5vw,5rem) 4rem;position:relative;
+  }
+  .hero-text h1{
+    font-family:'League Spartan',sans-serif;
+    font-weight:800;line-height:.94;letter-spacing:-.01em;
+    font-size:clamp(3.2rem,8vw,6.4rem);color:var(--ink);
+    text-transform:uppercase;margin-bottom:.1em;
+  }
+  .hero-text .sub{
+    font-family:'Fraunces',serif;font-style:italic;font-weight:400;
+    font-size:clamp(1.5rem,3.2vw,2.4rem);color:var(--gold);
+    margin:.6rem 0 1.8rem;line-height:1.15;
+  }
+  .hero-text .lede{
+    font-size:clamp(1.05rem,1.6vw,1.3rem);max-width:34ch;color:var(--ink-soft);
+    border-left:2px solid var(--gold);padding-left:1.2rem;margin-bottom:2.2rem;
+  }
+  .hero-meta{
+    display:flex;gap:2rem;flex-wrap:wrap;align-items:baseline;margin-bottom:2.4rem;
+  }
+  .hero-meta .m{font-family:'League Spartan',sans-serif}
+  .hero-meta .m .n{display:block;font-weight:700;font-size:1.5rem;color:var(--ink);letter-spacing:.02em}
+  .hero-meta .m .l{font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-soft)}
+  .btn{
+    display:inline-flex;align-items:center;gap:.6em;align-self:flex-start;
+    font-size:.85rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;
+    color:var(--cream);background:var(--ink);text-decoration:none;
+    padding:1rem 2rem;border-radius:2px;border:none;cursor:pointer;
+    transition:transform .3s,background .3s;
+  }
+  .btn:hover{background:var(--gold);transform:translateY(-2px)}
+  .btn .arrow{transition:transform .3s}
+  .btn:hover .arrow{transform:translateX(4px)}
+  .btn-ghost{background:transparent;color:var(--ink);border:1.5px solid var(--ink)}
+  .btn-ghost:hover{background:var(--ink);color:var(--cream)}
+
+  /* ── SECTION SHELL ── */
+  section{padding:clamp(4rem,9vw,8rem) 0}
+  .section-head{max-width:56ch;margin-bottom:3.5rem}
+  .section-head h2{
+    font-family:'Fraunces',serif;font-weight:400;
+    font-size:clamp(1.9rem,4.2vw,3.1rem);line-height:1.12;letter-spacing:-.01em;
+    margin-bottom:.4rem;
+  }
+  .section-head h2 em{font-style:italic;color:var(--gold)}
+
+  /* ── INVITO / INTRO ── */
+  .intro{background:var(--sage)}
+  .intro .lead-quote{
+    font-family:'Fraunces',serif;font-style:italic;font-weight:300;
+    font-size:clamp(1.6rem,3.6vw,2.7rem);line-height:1.3;
+    max-width:24ch;color:var(--ink);margin-bottom:2rem;
+  }
+  .intro-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:clamp(2rem,5vw,5rem);align-items:center}
+  .intro-grid p{margin-bottom:1.2rem;font-size:1.12rem;color:var(--ink-soft)}
+  .intro-grid p strong{color:var(--ink);font-weight:500}
+  .intro-img{border-radius:3px;overflow:hidden;box-shadow:var(--shadow);aspect-ratio:4/5}
+  .intro-img img{width:100%;height:100%;object-fit:cover}
+  @media(max-width:820px){.intro-grid{grid-template-columns:1fr}.intro-img{max-width:420px;margin:0 auto}}
+
+  /* ── LAVORO / PILLARS ── */
+  .pillars-head{display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:1rem;margin-bottom:3rem}
+  .pillars{display:grid;grid-template-columns:repeat(4,1fr);gap:1.2rem}
+  .pillar{
+    background:var(--cream);border:1px solid var(--line);border-radius:4px;
+    overflow:hidden;position:relative;transition:transform .35s,box-shadow .35s;
+    display:flex;flex-direction:column;
+  }
+  .pillar:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+  .pillar .ph{aspect-ratio:4/3;overflow:hidden}
+  .pillar .ph img{width:100%;height:100%;object-fit:cover;transition:transform .7s cubic-bezier(.2,.7,.2,1)}
+  .pillar:hover .ph img{transform:scale(1.05)}
+  .pillar .body{padding:1.5rem}
+  .pillar .glyph{font-family:'Fraunces',serif;font-style:italic;font-size:2.2rem;color:var(--gold);opacity:.55;margin-bottom:.5rem;display:block;line-height:1}
+  .pillar h3{font-family:'League Spartan',sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.06em;font-size:1.1rem;margin-bottom:.6rem}
+  .pillar p{font-size:.96rem;color:var(--ink-soft)}
+  @media(max-width:980px){.pillars{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:520px){.pillars{grid-template-columns:1fr}}
+
+  /* ── SOGLIA / DUALITY BAND ── */
+  .soglia{
+    position:relative;background:#221a33;color:var(--cream);overflow:hidden;
+  }
+  .soglia::before{
+    content:"";position:absolute;inset:0;
+    background:url('assets/luce.jpg') center/cover;opacity:.34;
+  }
+  .soglia::after{content:"";position:absolute;inset:0;background:linear-gradient(to right,rgba(34,26,51,.9),rgba(34,26,51,.55))}
+  .soglia .wrap{position:relative;z-index:2}
+  .soglia .pair{display:grid;grid-template-columns:1fr 1fr;gap:3rem;max-width:900px}
+  .soglia .force h3{font-family:'Fraunces',serif;font-style:italic;font-weight:400;font-size:2rem;margin-bottom:.6rem;color:#efe6f6}
+  .soglia .force p{color:rgba(243,240,232,.78);font-size:1.05rem}
+  .soglia .center-line{
+    font-family:'Fraunces',serif;font-style:italic;font-size:clamp(1.5rem,3.4vw,2.4rem);
+    text-align:center;max-width:22ch;margin:0 auto 3rem;line-height:1.3;color:#f2ebf8;
+  }
+  @media(max-width:640px){.soglia .pair{grid-template-columns:1fr;gap:2rem}}
+
+  /* ── CAMMINO / STAGES ── */
+  .programma{background:var(--sage)}
+  .stages{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;max-width:920px}
+  .stage{position:relative;padding:2rem 1.6rem 1.8rem;background:var(--cream);border-radius:4px;border:1px solid var(--line)}
+  .stage .sn{font-family:'League Spartan',sans-serif;font-weight:700;font-size:.95rem;letter-spacing:.14em;color:var(--gold)}
+  .stage h3{font-family:'Fraunces',serif;font-weight:400;font-size:1.7rem;margin:.5rem 0 .5rem;color:var(--ink)}
+  .stage p{color:var(--ink-soft);font-size:1rem}
+  @media(max-width:700px){.stages{grid-template-columns:1fr;gap:1rem}}
+
+  /* ── SERATA INTRODUTTIVA (highlighted) ── */
+  .taster-section{padding-top:0}
+  .taster-box{
+    position:relative;overflow:hidden;border-radius:8px;color:var(--cream);
+    background:linear-gradient(135deg,#2e2148,#4a2f6e 55%,#3a2558);
+    box-shadow:var(--shadow);
+    display:grid;grid-template-columns:1.4fr 1fr;gap:2rem;align-items:center;
+    padding:clamp(2rem,5vw,3.4rem);
+  }
+  .taster-box::before{
+    content:"";position:absolute;inset:0;
+    background:url('assets/grotta.jpg') right center/cover;opacity:.16;pointer-events:none;
+  }
+  .taster-box>*{position:relative;z-index:2}
+  .taster-box .tag{
+    display:inline-block;font-family:'League Spartan',sans-serif;font-weight:600;
+    font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-light);
+    border:1px solid rgba(165,131,196,.5);border-radius:2px;padding:.3rem .8rem;margin-bottom:1.1rem;
+  }
+  .taster-box h3{font-family:'Fraunces',serif;font-weight:400;font-size:clamp(1.6rem,3.2vw,2.3rem);line-height:1.15;margin-bottom:.7rem;color:#f2ebf8}
+  .taster-box p{color:rgba(242,235,248,.82);font-size:1.05rem;max-width:46ch}
+  .taster-cta{text-align:center}
+  .taster-cta .when{font-family:'League Spartan',sans-serif;margin-bottom:1.2rem}
+  .taster-cta .when b{display:block;font-weight:700;font-size:1.7rem;color:#f2ebf8;letter-spacing:.02em}
+  .taster-cta .when small{font-size:.9rem;color:rgba(242,235,248,.7);letter-spacing:.05em}
+  .taster-cta .btn{background:var(--gold-light);color:#241636}
+  .taster-cta .btn:hover{background:#fff}
+  @media(max-width:700px){.taster-box{grid-template-columns:1fr;gap:1.4rem}.taster-cta{text-align:left}}
+
+  /* ── FACILITATORS ── */
+  .guide-grid{display:grid;grid-template-columns:320px 1fr;gap:clamp(2rem,5vw,4rem);align-items:center}
+  .guide-photo{border-radius:4px;overflow:hidden;box-shadow:var(--shadow);aspect-ratio:3/4}
+  .guide-photo img{width:100%;height:100%;object-fit:cover;object-position:center 30%}
+  .guide h3{font-family:'League Spartan',sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.05em;font-size:1.2rem;margin:1.4rem 0 .2rem}
+  .guide h3:first-child{margin-top:0}
+  .guide .role{font-family:'Fraunces',serif;font-style:italic;color:var(--gold);font-size:1.05rem;margin-bottom:.5rem}
+  .guide p{color:var(--ink-soft);max-width:52ch}
+  .guide-link{
+    display:inline-block;margin-top:.7rem;font-family:'League Spartan',sans-serif;
+    font-size:.82rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;
+    color:var(--gold);text-decoration:none;border-bottom:1px solid transparent;
+    transition:border-color .3s,color .3s;
+  }
+  .guide-link:hover{color:var(--rust);border-color:var(--rust)}
+  @media(max-width:700px){.guide-grid{grid-template-columns:1fr}.guide-photo{max-width:320px}}
+
+  /* ── ISCRIZIONE / FORM ── */
+  .iscrizione{background:var(--ink);color:var(--cream)}
+  .iscrizione .section-head h2{color:var(--cream)}
+  .iscrizione .section-head h2 em{color:var(--gold-light)}
+  .form-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2.5rem,6vw,5rem)}
+  .price-card{
+    background:rgba(243,240,232,.06);border:1px solid rgba(243,240,232,.16);
+    border-radius:6px;padding:2.4rem;align-self:start;
+  }
+  .price-card .price-tag{font-family:'League Spartan',sans-serif;font-weight:800;font-size:3.4rem;color:var(--cream);line-height:1}
+  .price-card .price-tag small{font-size:1.1rem;font-weight:500;color:var(--gold-light);display:block;letter-spacing:.1em;margin-bottom:.3rem;text-transform:uppercase}
+  .price-card .price-note{color:rgba(243,240,232,.7);margin-top:.8rem;font-size:1rem}
+  .price-card ul{list-style:none;margin-top:1.8rem;padding-top:1.6rem;border-top:1px solid rgba(243,240,232,.16)}
+  .price-card li{display:flex;gap:.7rem;margin-bottom:.9rem;color:rgba(243,240,232,.88);font-size:1rem}
+  .price-card li::before{content:"—";color:var(--gold-light)}
+  .price-card .taster-line{margin-top:1.6rem;font-size:.95rem;color:rgba(243,240,232,.7);font-style:italic;font-family:'Fraunces',serif}
+
+  form .row{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+  @media(max-width:520px){form .row{grid-template-columns:1fr}}
+  .field{margin-bottom:1.2rem}
+  label{display:block;font-size:.74rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:rgba(243,240,232,.7);margin-bottom:.5rem}
+  input,select,textarea{
+    width:100%;background:rgba(243,240,232,.06);border:1px solid rgba(243,240,232,.2);
+    border-radius:3px;padding:.85rem 1rem;color:var(--cream);font-size:1rem;
+    font-family:'Fraunces',serif;transition:border-color .3s,background .3s;
+  }
+  input::placeholder,textarea::placeholder{color:rgba(243,240,232,.35)}
+  input:focus,select:focus,textarea:focus{outline:none;border-color:var(--gold-light);background:rgba(243,240,232,.1)}
+  select{cursor:pointer}
+  select option{background:#2e2540;color:var(--cream)}
+  .form-note{font-size:.86rem;color:rgba(243,240,232,.55);margin-top:1rem;line-height:1.5}
+  .iscrizione .btn{background:var(--gold);color:#221a33;margin-top:.5rem;width:100%;justify-content:center}
+  .iscrizione .btn:hover{background:var(--gold-light)}
+  .form-success{display:none;background:rgba(165,131,196,.15);border:1px solid var(--gold-light);border-radius:4px;padding:1.2rem;margin-top:1rem;color:#efe6f6;font-size:.98rem}
+  .form-success.show{display:block}
+  @media(max-width:820px){.form-grid{grid-template-columns:1fr}}
+
+  /* ── FOOTER ── */
+  footer{background:var(--sage-deep);padding:3.5rem 0 2.5rem}
+  .foot-grid{display:flex;justify-content:space-between;flex-wrap:wrap;gap:2rem;align-items:flex-start}
+  footer .fbrand{font-family:'League Spartan',sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.1em;font-size:1.1rem;margin-bottom:.4rem}
+  footer .contacts{font-family:'League Spartan',sans-serif;font-size:.95rem;line-height:2;color:var(--ink-soft)}
+  footer .contacts a{color:var(--gold);text-decoration:none}
+  footer .contacts a:hover{text-decoration:underline}
+  footer .place{font-family:'Fraunces',serif;font-style:italic;color:var(--ink-soft);max-width:24ch}
+  .foot-rule{height:1px;background:rgba(120,110,90,.3);margin:2.5rem 0 1.5rem}
+  .foot-legal{font-family:'League Spartan',sans-serif;font-size:.76rem;letter-spacing:.05em;color:var(--ink-soft);text-transform:uppercase}
+
+  /* reveal on scroll */
+  .reveal{opacity:0;transform:translateY(24px);transition:opacity .8s ease,transform .8s ease}
+  .reveal.in{opacity:1;transform:none}
+  @media(prefers-reduced-motion:reduce){
+    .reveal{opacity:1;transform:none;transition:none}
+    html{scroll-behavior:auto}
+    .btn:hover,.pillar:hover{transform:none}
+  }
+</style>
+</head>
+<body>
+
+<nav id="nav">
+  <span class="brand" style="visibility:hidden">·</span>
+  <a href="#iscrizione" class="nav-cta">Iscriviti</a>
+</nav>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="hero-img">
+    <img src="assets/fessura.jpg" alt="Fenditura di roccia in Sardegna con la luce che filtra dall'apertura" fetchpriority="high" width="1051" height="1400">
+  </div>
+  <div class="hero-text">
+    <div class="eyebrow">Un percorso in tre incontri</div>
+    <h1>Eros e<br>Thanatos</h1>
+    <p class="sub">Dualità o integrazione?</p>
+    <p class="lede">Due energie si muovono in noi e danzano dentro di noi, anche quando non ne siamo consapevoli. Questo percorso è lo spazio per ascoltarle.</p>
+    <div class="hero-meta">
+      <div class="m"><span class="n">3</span><span class="l">Incontri</span></div>
+      <div class="m"><span class="n">Set–Ott</span><span class="l">2026 · Padova</span></div>
+      <div class="m"><span class="n">€ 69</span><span class="l">Percorso completo</span></div>
+    </div>
+    <a href="#iscrizione" class="btn">Prenota il tuo posto <span class="arrow">→</span></a>
+  </div>
+</header>
+
+<!-- INVITO -->
+<section class="intro">
+  <div class="wrap">
+    <p class="lead-quote reveal">Esiste uno spazio dove la spinta vitale, per fluire, chiede di lasciarsi andare.</p>
+    <div class="intro-grid">
+      <div class="reveal">
+        <p>Eros e Thanatos sono <strong>due forze che attraversano la vita</strong> nel suo respiro più profondo: nascita, crescita, dissoluzione. La spinta che costruisce e quella che lascia andare, che si alternano dentro di noi.</p>
+        <p>Dualità o integrazione? È la domanda che teniamo aperta. In questo percorso porteremo consapevolezza alla nostra parte più <strong>selvaggia</strong> — quella che chiede di essere ascoltata — e al modo in cui abitiamo il confine tra la concretezza del corpo e l'espansione della dimensione interiore.</p>
+        <p>Un invito, rivolto a uomini e donne, a lasciare che il pregiudizio si sciolga nel sentire.</p>
+      </div>
+      <div class="intro-img reveal">
+        <img src="assets/gola_heart.jpg" alt="Fenditura nella roccia di una gola in Sardegna" loading="lazy" width="751" height="1000">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COME LAVORIAMO -->
+<section>
+  <div class="wrap">
+    <div class="pillars-head">
+      <div class="section-head" style="margin-bottom:0">
+        <div class="eyebrow reveal">Come lavoreremo</div>
+        <h2 class="reveal">Non se ne parla.<br><em>Si sente, nel corpo.</em></h2>
+      </div>
+    </div>
+    <div class="pillars">
+      <div class="pillar reveal">
+        <div class="ph"><img src="assets/gola_cave.jpg" alt="Apertura scura alla base della roccia" loading="lazy" width="676" height="900"></div>
+        <div class="body">
+          <span class="glyph">i.</span>
+          <h3>Ascolto</h3>
+          <p>Fermarsi e sentire ciò che è già qui, senza fretta di cambiarlo. Uno spazio dove il corpo può finalmente essere ascoltato.</p>
+        </div>
+      </div>
+      <div class="pillar reveal">
+        <div class="ph"><img src="assets/gola_wide.jpg" alt="Gola stretta tra pareti di roccia" loading="lazy" width="676" height="900"></div>
+        <div class="body">
+          <span class="glyph">ii.</span>
+          <h3>Movimento</h3>
+          <p>Il corpo che danza le sue due energie — quella che costruisce e quella che dissolve — ritrovando la propria alternanza naturale.</p>
+        </div>
+      </div>
+      <div class="pillar reveal">
+        <div class="ph"><img src="assets/gola_tall.jpg" alt="Alte pareti di roccia con il cielo in fondo" loading="lazy" width="676" height="900"></div>
+        <div class="body">
+          <span class="glyph">iii.</span>
+          <h3>Respiro</h3>
+          <p>Il ponte tra ciò che tratteniamo e ciò che lasciamo fluire. Il ritmo che accompagna ogni trasformazione, dentro e fuori.</p>
+        </div>
+      </div>
+      <div class="pillar reveal">
+        <div class="ph"><img src="assets/bosco.jpg" alt="Bosco attraversato dalla luce" loading="lazy" width="902" height="1200"></div>
+        <div class="body">
+          <span class="glyph">iv.</span>
+          <h3>Voce</h3>
+          <p>Il suono che scioglie ciò che le parole non dicono. La vibrazione che apre la soglia tra l'interno e il mondo.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SOGLIA / DUALITÀ -->
+<section class="soglia">
+  <div class="wrap">
+    <p class="center-line reveal">Al centro non c'è una scelta, ma una soglia da attraversare.</p>
+    <div class="pair">
+      <div class="force reveal">
+        <h3>Eros</h3>
+        <p>La pulsione di vita. Il piacere, la sensualità, la spinta che unisce e genera. La parte che costruisce e desidera.</p>
+      </div>
+      <div class="force reveal">
+        <h3>Thanatos</h3>
+        <p>Il respiro della trasformazione. Il buio fertile, la dissoluzione, il coraggio di finire perché qualcosa possa rinascere.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MOVIMENTO / TRE TAPPE -->
+<section class="programma">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow reveal">Il cammino</div>
+      <h2 class="reveal">Tre tappe, <em>un unico movimento</em></h2>
+    </div>
+    <div class="stages">
+      <div class="stage reveal">
+        <span class="sn">I</span>
+        <h3>Riconoscere</h3>
+        <p>Sentire le due energie che già si muovono in noi, senza giudicarle.</p>
+      </div>
+      <div class="stage reveal">
+        <span class="sn">II</span>
+        <h3>Attraversare</h3>
+        <p>Abitare la soglia tra ciò che costruisce e ciò che dissolve.</p>
+      </div>
+      <div class="stage reveal">
+        <span class="sn">III</span>
+        <h3>Integrare</h3>
+        <p>Ritrovare l'alternanza, l'equilibrio, il fluire.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERATA INTRODUTTIVA FACOLTATIVA -->
+<section class="taster-section">
+  <div class="wrap">
+    <div class="taster-box reveal">
+      <div>
+        <span class="tag">Serata facoltativa</span>
+        <h3>Prima di iniziare, una serata per sentire se fa per te</h3>
+        <p>Un incontro introduttivo a sé stante: un assaggio dell'esperienza, per sentire il tema sulla pelle e capire se desideri approfondire con il percorso completo. Non è obbligatoria — è una porta aperta.</p>
+      </div>
+      <div class="taster-cta">
+        <div class="when">
+          <b>15 settembre</b>
+          <small>h 20.00 · € 25 · Padova</small>
+        </div>
+        <a href="#iscrizione" class="btn">Iscriviti alla serata <span class="arrow">→</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CHI VI ACCOMPAGNERÀ -->
+<section>
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow reveal">Chi vi accompagnerà</div>
+      <h2 class="reveal">Due sguardi sulla <em>stessa soglia</em></h2>
+    </div>
+    <div class="guide-grid">
+      <div class="guide-photo reveal">
+        <img src="assets/duo.jpg" alt="Marzia De Franceschi e Barbara Visentin" loading="lazy" width="600" height="800">
+      </div>
+      <div class="guide reveal">
+        <h3>Marzia De Franceschi</h3>
+        <div class="role">Ostetrica, naturopata, counselor</div>
+        <p>Ostetrica, naturopata, consulente sessuale e counselor relazionale, unisce competenze scientifiche, cure naturali ed esplorazione del femminile. Ha accompagnato molte donne nei passaggi più importanti della vita, integrando Tantra, Gestalt e arte ostetrica. Crede che ognuno porti dentro di sé un tesoro da scoprire e coltivare.</p>
+        <a class="guide-link" href="https://www.marziaprogettowohpe.it" target="_blank" rel="noopener">marziaprogettowohpe.it →</a>
+        <h3>Barbara Visentin</h3>
+        <div class="role">Naturopata, suonoterapeuta, tanatologa</div>
+        <p>Lavora sul confine tra il sentire del corpo e i temi della trasformazione e della fine. Intreccia suono, presenza e consapevolezza in uno spazio di cura.</p>
+        <a class="guide-link" href="https://www.armonicochaos.com" target="_blank" rel="noopener">armonicochaos.com →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ISCRIZIONE -->
+<section class="iscrizione" id="iscrizione">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Iscrizione</div>
+      <h2>Se questi passi <em>risuonano con i tuoi</em></h2>
+    </div>
+    <div class="form-grid">
+      <div class="price-card reveal">
+        <div class="price-tag"><small>Percorso completo</small>€ 69</div>
+        <p class="price-note">Il percorso completo in tre incontri esperienziali, a Padova.</p>
+        <ul>
+          <li>Gruppo ristretto, per uno spazio raccolto e sicuro</li>
+          <li>Tocco, respiro e movimento consapevole</li>
+          <li>Aperto a uomini e donne, nessuna esperienza richiesta</li>
+        </ul>
+        <p class="taster-line">Vuoi prima assaggiare? La serata del 15 settembre (€ 25) è una porta d'ingresso facoltativa.</p>
+      </div>
+
+      <div class="reveal">
+        <form id="iscrizioneForm" novalidate>
+          <input type="hidden" name="_subject" value="Nuova iscrizione — Eros e Thanatos">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+          <div class="row">
+            <div class="field">
+              <label for="nome">Nome</label>
+              <input type="text" id="nome" name="nome" placeholder="Il tuo nome" required>
+            </div>
+            <div class="field">
+              <label for="cognome">Cognome</label>
+              <input type="text" id="cognome" name="cognome" placeholder="Il tuo cognome" required>
+            </div>
+          </div>
+          <div class="row">
+            <div class="field">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="nome@esempio.it" required>
+            </div>
+            <div class="field">
+              <label for="tel">Telefono</label>
+              <input type="tel" id="tel" name="tel" placeholder="Il tuo numero" required>
+            </div>
+          </div>
+          <div class="field">
+            <label for="scelta">A cosa vuoi iscriverti</label>
+            <select id="scelta" name="scelta" required>
+              <option value="percorso">Percorso completo — 3 incontri (€ 69)</option>
+              <option value="serata">Solo serata introduttiva — 15 settembre (€ 25)</option>
+              <option value="entrambi">Serata introduttiva + percorso</option>
+              <option value="info">Vorrei prima qualche informazione</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="note">Qualcosa che vuoi dirci <span style="text-transform:none;letter-spacing:0;opacity:.6">(facoltativo)</span></label>
+            <textarea id="note" name="note" rows="3" placeholder="Una domanda, un pensiero, ciò che ti porta qui…"></textarea>
+          </div>
+          <button type="submit" class="btn">Invia la richiesta <span class="arrow">→</span></button>
+          <p class="form-note">Ti ricontatteremo per confermare il posto e darti tutti i dettagli su luogo e cosa portare. I posti sono limitati.</p>
+          <div class="form-success" id="formSuccess">
+            Grazie 🌿 La tua richiesta è arrivata. Ti scriveremo presto per confermare il posto. Se preferisci, puoi anche scriverci subito su WhatsApp ai numeri qui sotto.
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="fbrand">Armonico Chaos</div>
+        <p class="place">via Decorati al Valor Civile · Padova</p>
+      </div>
+      <div class="contacts">
+        <strong style="display:block;color:var(--ink);font-weight:600;margin-bottom:.3rem">Per iscrizioni e info</strong>
+        Marzia — <a href="tel:+393407044938">340 70 44 938</a><br>
+        Barbara — <a href="tel:+393407192138">340 71 92 138</a>
+      </div>
+      <div class="contacts">
+        <strong style="display:block;color:var(--ink);font-weight:600;margin-bottom:.3rem">Online</strong>
+        <a href="https://www.marziaprogettowohpe.it" target="_blank" rel="noopener">marziaprogettowohpe.it</a><br>
+        <a href="https://www.armonicochaos.com" target="_blank" rel="noopener">armonicochaos.com</a>
+      </div>
+    </div>
+    <div class="foot-rule"></div>
+    <div class="foot-legal">Eros e Thanatos — Percorso esperienziale · Autunno 2026</div>
+  </div>
+</footer>
+
+<script>
+  // nav background on scroll
+  const nav=document.getElementById('nav');
+  const onScroll=()=>nav.classList.toggle('scrolled',window.scrollY>40);
+  onScroll();window.addEventListener('scroll',onScroll,{passive:true});
+
+  // reveal on scroll
+  const io=new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}});
+  },{threshold:.14,rootMargin:'0px 0px -8% 0px'});
+  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+  // form → invia a armonicochaos@gmail.com via FormSubmit (nessun backend proprio necessario)
+  const form=document.getElementById('iscrizioneForm');
+  const btn=form.querySelector('button');
+  const btnHTML=btn.innerHTML;
+  form.addEventListener('submit',async(ev)=>{
+    ev.preventDefault();
+    if(!form.checkValidity()){form.reportValidity();return;}
+    btn.disabled=true;
+    btn.textContent='Invio in corso…';
+    try{
+      const res=await fetch('https://formsubmit.co/ajax/armonicochaos@gmail.com',{
+        method:'POST',
+        headers:{'Accept':'application/json'},
+        body:new FormData(form)
+      });
+      if(!res.ok) throw new Error('invio non riuscito');
+      document.getElementById('formSuccess').classList.add('show');
+      btn.textContent='Richiesta inviata ✓';
+      document.getElementById('formSuccess').scrollIntoView({behavior:'smooth',block:'center'});
+    }catch(err){
+      btn.disabled=false;
+      btn.innerHTML=btnHTML;
+      alert('Non siamo riusciti a inviare la richiesta. Riprova, oppure scrivici direttamente su WhatsApp ai numeri qui sotto.');
+    }
+  });
+</script>
+</body>
+</html>
