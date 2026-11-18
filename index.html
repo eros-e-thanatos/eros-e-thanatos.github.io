@@ -4,17 +4,17 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Eros e Thanatos — Un percorso in tre incontri | Armonico Chaos</title>
-<meta name="description" content="Un percorso esperienziale in tre incontri per abitare la soglia tra Eros e Thanatos, attraverso il tocco, il respiro e il movimento. Padova, autunno 2026.">
+<meta name="description" content="Un percorso esperienziale in tre incontri per abitare la soglia tra Eros e Thanatos, attraverso il tocco, il respiro e il movimento. Padova, gennaio–febbraio 2027.">
 
 <meta property="og:type" content="website">
 <meta property="og:title" content="Eros e Thanatos — Un percorso in tre incontri | Armonico Chaos">
-<meta property="og:description" content="Un percorso esperienziale in tre incontri per abitare la soglia tra Eros e Thanatos, attraverso l'ascolto, il movimento, il respiro e la voce. Padova, autunno 2026.">
+<meta property="og:description" content="Un percorso esperienziale in tre incontri per abitare la soglia tra Eros e Thanatos, attraverso l'ascolto, il movimento, il respiro e la voce. Padova, gennaio–febbraio 2027.">
 <meta property="og:image" content="https://eros-e-thanatos.github.io/assets/fessura.jpg">
 <meta property="og:url" content="https://eros-e-thanatos.github.io/">
 <meta property="og:locale" content="it_IT">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Eros e Thanatos — Un percorso in tre incontri">
-<meta name="twitter:description" content="Un percorso esperienziale in tre incontri per abitare la soglia tra Eros e Thanatos. Padova, autunno 2026.">
+<meta name="twitter:description" content="Un percorso esperienziale in tre incontri per abitare la soglia tra Eros e Thanatos. Padova, gennaio–febbraio 2027.">
 <meta name="twitter:image" content="https://eros-e-thanatos.github.io/assets/fessura.jpg">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -298,6 +298,20 @@
   .foot-rule{height:1px;background:rgba(120,110,90,.3);margin:2.5rem 0 1.5rem}
   .foot-legal{font-family:'League Spartan',sans-serif;font-size:.76rem;letter-spacing:.05em;color:var(--ink-soft);text-transform:uppercase}
 
+
+  /* date */
+  .stage .sdate{display:block;font-family:'League Spartan',sans-serif;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin:.2rem 0 .7rem}
+  .price-dates{font-family:'League Spartan',sans-serif;letter-spacing:.06em;color:var(--gold-light);margin:-.4rem 0 1.4rem;line-height:1.6}
+  /* incontri precedenti */
+  .gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:.8rem;margin-bottom:3.5rem}
+  .gallery figure{margin:0;border-radius:3px;overflow:hidden;aspect-ratio:3/4;box-shadow:var(--shadow);background:#e7e1d4}
+  .gallery img{width:100%;height:100%;object-fit:cover;transition:transform .7s cubic-bezier(.2,.7,.2,1)}
+  .gallery figure:hover img{transform:scale(1.04)}
+  @media(max-width:820px){.gallery{grid-template-columns:repeat(2,1fr)}}
+  .reels-head{font-family:'Fraunces',serif;font-style:italic;font-size:1.5rem;color:var(--ink);margin-bottom:1.5rem}
+  .reels{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:1.2rem;justify-items:center}
+  .reels iframe{width:100%;max-width:400px;height:600px;border:0;border-radius:6px;background:#fff;box-shadow:var(--shadow)}
+
   /* reveal on scroll */
   .reveal{opacity:0;transform:translateY(24px);transition:opacity .8s ease,transform .8s ease}
   .reveal.in{opacity:1;transform:none}
@@ -327,8 +341,8 @@
     <p class="lede">Due energie si muovono in noi e danzano dentro di noi, anche quando non ne siamo consapevoli. Questo percorso è lo spazio per ascoltarle.</p>
     <div class="hero-meta">
       <div class="m"><span class="n">3</span><span class="l">Incontri</span></div>
-      <div class="m"><span class="n">Set–Ott</span><span class="l">2026 · Padova</span></div>
-      <div class="m"><span class="n">€ 69</span><span class="l">Percorso completo</span></div>
+      <div class="m"><span class="n">Gen–Feb</span><span class="l">2027 · Padova</span></div>
+      <div class="m"><span class="n">€ 89</span><span class="l">Percorso completo</span></div>
     </div>
     <a href="#iscrizione" class="btn">Prenota il tuo posto <span class="arrow">→</span></a>
   </div>
@@ -420,20 +434,24 @@
     <div class="section-head">
       <div class="eyebrow reveal">Il cammino</div>
       <h2 class="reveal">Tre tappe, <em>un unico movimento</em></h2>
+      <p class="reveal" style="margin-top:1rem;color:var(--ink-soft)">Tre martedì sera a Padova, dalle ore 20.00.</p>
     </div>
     <div class="stages">
       <div class="stage reveal">
         <span class="sn">I</span>
+        <span class="sdate">Martedì 19 gennaio · ore 20.00</span>
         <h3>Riconoscere</h3>
         <p>Sentire le due energie che già si muovono in noi, senza giudicarle.</p>
       </div>
       <div class="stage reveal">
         <span class="sn">II</span>
+        <span class="sdate">Martedì 2 febbraio · ore 20.00</span>
         <h3>Attraversare</h3>
         <p>Abitare la soglia tra ciò che costruisce e ciò che dissolve.</p>
       </div>
       <div class="stage reveal">
         <span class="sn">III</span>
+        <span class="sdate">Martedì 16 febbraio · ore 20.00</span>
         <h3>Integrare</h3>
         <p>Ritrovare l'alternanza, l'equilibrio, il fluire.</p>
       </div>
@@ -457,6 +475,33 @@
         </div>
         <a href="#iscrizione" class="btn">Iscriviti alla serata <span class="arrow">→</span></a>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- DAGLI INCONTRI PRECEDENTI -->
+<section>
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow reveal">Dagli incontri precedenti</div>
+      <h2 class="reveal">Com'è <em>andata</em></h2>
+    </div>
+    <div class="gallery">
+      <figure class="reveal"><img src="https://www.armonicochaos.com/it/wp-content/uploads/2026/11/eros-thanatos-incontri-precedenti-a1-sfumata-768x1024.jpg" alt="Un momento degli incontri precedenti di Eros e Thanatos" loading="lazy" width="768" height="1024"></figure>
+      <figure class="reveal"><img src="https://www.armonicochaos.com/it/wp-content/uploads/2026/11/eros-thanatos-incontri-precedenti-a4-sfumata-768x1023.jpg" alt="Un momento degli incontri precedenti di Eros e Thanatos" loading="lazy" width="768" height="1024"></figure>
+      <figure class="reveal"><img src="https://www.armonicochaos.com/it/wp-content/uploads/2026/11/eros-thanatos-incontri-precedenti-a5-sfumata-768x1023.jpg" alt="Un momento degli incontri precedenti di Eros e Thanatos" loading="lazy" width="768" height="1024"></figure>
+      <figure class="reveal"><img src="https://www.armonicochaos.com/it/wp-content/uploads/2026/11/eros-thanatos-incontri-precedenti-b1-768x1023.jpg" alt="Un momento degli incontri precedenti di Eros e Thanatos" loading="lazy" width="768" height="1024"></figure>
+      <figure class="reveal"><img src="https://www.armonicochaos.com/it/wp-content/uploads/2026/11/eros-thanatos-incontri-precedenti-b2-768x1023.jpg" alt="Un momento degli incontri precedenti di Eros e Thanatos" loading="lazy" width="768" height="1024"></figure>
+      <figure class="reveal"><img src="https://www.armonicochaos.com/it/wp-content/uploads/2026/11/eros-thanatos-incontri-precedenti-b3-768x1023.jpg" alt="Un momento degli incontri precedenti di Eros e Thanatos" loading="lazy" width="768" height="1024"></figure>
+      <figure class="reveal"><img src="https://www.armonicochaos.com/it/wp-content/uploads/2026/11/eros-thanatos-incontri-precedenti-b4-sfumata-768x1023.jpg" alt="Un momento degli incontri precedenti di Eros e Thanatos" loading="lazy" width="768" height="1024"></figure>
+      <figure class="reveal"><img src="https://www.armonicochaos.com/it/wp-content/uploads/2026/11/eros-thanatos-incontri-precedenti-b6-sfumata-768x1023.jpg" alt="Un momento degli incontri precedenti di Eros e Thanatos" loading="lazy" width="768" height="1024"></figure>
+    </div>
+    <p class="reels-head reveal">Caroselli e reel su Instagram</p>
+    <div class="reels">
+      <iframe src="https://www.instagram.com/p/DfG7RB9olth/embed/" loading="lazy" allowtransparency="true" scrolling="no" title="Eros e Thanatos su Instagram"></iframe>
+      <iframe src="https://www.instagram.com/p/DdYK8uUAsWr/embed/" loading="lazy" allowtransparency="true" scrolling="no" title="Eros e Thanatos su Instagram"></iframe>
+      <iframe src="https://www.instagram.com/p/Db0QenljMY0/embed/" loading="lazy" allowtransparency="true" scrolling="no" title="Eros e Thanatos su Instagram"></iframe>
+      <iframe src="https://www.instagram.com/p/DYEUWtmi-Ux/embed/" loading="lazy" allowtransparency="true" scrolling="no" title="Eros e Thanatos su Instagram"></iframe>
     </div>
   </div>
 </section>
@@ -495,8 +540,9 @@
     </div>
     <div class="form-grid">
       <div class="price-card reveal">
-        <div class="price-tag"><small>Percorso completo</small>€ 69</div>
+        <div class="price-tag"><small>Percorso completo</small>€ 89</div>
         <p class="price-note">Il percorso completo in tre incontri esperienziali, a Padova.</p>
+        <p class="price-dates">Martedì 19 gennaio · 2 febbraio · 16 febbraio 2027<br>ore 20.00</p>
         <ul>
           <li>Gruppo ristretto, per uno spazio raccolto e sicuro</li>
           <li>Tocco, respiro e movimento consapevole</li>
@@ -534,7 +580,7 @@
           <div class="field">
             <label for="scelta">A cosa vuoi iscriverti</label>
             <select id="scelta" name="scelta" required>
-              <option value="percorso">Percorso completo — 3 incontri (€ 69)</option>
+              <option value="percorso">Percorso completo — 3 incontri (€ 89)</option>
               <option value="serata">Solo serata introduttiva — 15 settembre (€ 25)</option>
               <option value="entrambi">Serata introduttiva + percorso</option>
               <option value="info">Vorrei prima qualche informazione</option>
@@ -575,7 +621,7 @@
       </div>
     </div>
     <div class="foot-rule"></div>
-    <div class="foot-legal">Eros e Thanatos — Percorso esperienziale · Autunno 2026</div>
+    <div class="foot-legal">Eros e Thanatos — Percorso esperienziale · Gennaio–Febbraio 2027</div>
   </div>
 </footer>
 
