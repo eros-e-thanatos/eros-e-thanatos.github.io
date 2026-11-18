@@ -120,6 +120,21 @@
   .hero-meta .m{font-family:'League Spartan',sans-serif}
   .hero-meta .m .n{display:block;font-weight:700;font-size:1.5rem;color:var(--ink);letter-spacing:.02em}
   .hero-meta .m .l{font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-soft)}
+  .hero-dates{margin-bottom:2.4rem;font-family:'League Spartan',sans-serif}
+  .hero-dates .hd-head{font-size:.75rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:.9rem}
+  .hero-dates .hd-row{display:flex;flex-wrap:wrap;gap:0;align-items:stretch}
+  .hero-dates .d{display:flex;flex-direction:column;padding:0 1.4rem;border-left:1px solid var(--gold)}
+  .hero-dates .d:first-child{padding-left:0;border-left:none}
+  .hero-dates .d .r{font-size:.7rem;letter-spacing:.18em;color:var(--gold);font-weight:600}
+  .hero-dates .d .n{font-weight:700;font-size:1.5rem;color:var(--ink);letter-spacing:.02em;line-height:1.2;text-transform:uppercase}
+  .hero-dates .d .l{font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-soft)}
+  .hero-dates .d.price{margin-left:auto;padding-left:1.4rem}
+  @media (max-width:560px){
+    .hero-dates .d{padding:0 .9rem}
+    .hero-dates .d .n{font-size:1.25rem}
+    .hero-dates .d.price{margin-left:0;border-left:none;padding-left:0;margin-top:1rem;flex-basis:100%}
+    .hero-dates .d.price .r{display:none}
+  }
   .btn{
     display:inline-flex;align-items:center;gap:.6em;align-self:flex-start;
     font-size:.85rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;
@@ -341,10 +356,14 @@
     <h1>Eros e<br>Thanatos</h1>
     <p class="sub">Dualità o integrazione?</p>
     <p class="lede">Due energie si muovono in noi e danzano dentro di noi, anche quando non ne siamo consapevoli. Questo percorso è lo spazio per ascoltarle.</p>
-    <div class="hero-meta">
-      <div class="m"><span class="n">3</span><span class="l">Incontri</span></div>
-      <div class="m"><span class="n">Gen–Feb</span><span class="l">2027 · Padova</span></div>
-      <div class="m"><span class="n">€ 89</span><span class="l">Percorso completo</span></div>
+    <div class="hero-dates">
+      <div class="hd-head">3 incontri · martedì ore 20.00 · Padova</div>
+      <div class="hd-row">
+        <div class="d"><span class="r">I</span><span class="n">19 Gen</span><span class="l">2027</span></div>
+        <div class="d"><span class="r">II</span><span class="n">2 Feb</span><span class="l">2027</span></div>
+        <div class="d"><span class="r">III</span><span class="n">16 Feb</span><span class="l">2027</span></div>
+        <div class="d price"><span class="r">&nbsp;</span><span class="n">€ 89</span><span class="l">Percorso completo</span></div>
+      </div>
     </div>
     <a href="#iscrizione" class="btn">Prenota il tuo posto <span class="arrow">→</span></a>
   </div>
@@ -478,7 +497,7 @@
       <figure class="reveal"><img src="https://www.armonicochaos.com/it/wp-content/uploads/2026/11/eros-thanatos-incontri-precedenti-b4-sfumata-768x1023.jpg" alt="Un momento degli incontri precedenti di Eros e Thanatos" loading="lazy" width="768" height="1024"></figure>
       <figure class="reveal"><img src="https://www.armonicochaos.com/it/wp-content/uploads/2026/11/eros-thanatos-incontri-precedenti-b6-sfumata-768x1023.jpg" alt="Un momento degli incontri precedenti di Eros e Thanatos" loading="lazy" width="768" height="1024"></figure>
     </div>
-    <p class="reels-head reveal">Caroselli e reel su Instagram</p>
+    <p class="reels-head reveal">Qualche info in più dagli incontri precedenti</p>
     <div class="reels">
       <iframe src="https://www.instagram.com/p/DfG7RB9olth/embed/" loading="lazy" allowtransparency="true" scrolling="no" title="Eros e Thanatos su Instagram"></iframe>
       <iframe src="https://www.instagram.com/p/DdYK8uUAsWr/embed/" loading="lazy" allowtransparency="true" scrolling="no" title="Eros e Thanatos su Instagram"></iframe>
